@@ -12,9 +12,22 @@ A lightweight, minimal task management application with zero bloat. Built with N
 
 ## Quick Start
 
+### Local
+
 ```bash
 npm install
 npm start
+```
+
+### Docker
+
+```bash
+# Build and run with Docker Compose
+docker-compose up --build
+
+# Or build manually
+docker build -t task-management-system .
+docker run -p 3000:3000 task-management-system
 ```
 
 Open `http://localhost:3000`
